@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office of the Mayor - Palpa Municipality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple transition for mobile menu */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold text-blue-700">Mayor of Palpa</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 transition">Home</a>
+                <a href="#work" class="text-gray-600 hover:text-blue-700 transition">Our Work</a>
+                <a href="#gunaso" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-medium">Submit Gunaso</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg absolute top-16 left-0 w-full z-40">
+            <a href="#home" class="block text-gray-700 hover:bg-gray-100 px-6 py-3">Home</a>
+            <a href="#work" class="block text-gray-700 hover:bg-gray-100 px-6 py-3">Our Work</a>
+            <a href="#gunaso" class="block bg-blue-600 text-white font-medium hover:bg-blue-700 px-6 py-3">Submit Gunaso</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center">
+            <!-- Text Content -->
+            <div class="md:w-2/3 lg:w-1/2 mb-10 md:mb-0 md:pr-12">
+                <span class="text-blue-600 font-semibold">Welcome from [Your Name]</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-6 leading-tight">
+                    Leading Palpa to a Brighter, Prosperous Future
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    My office is committed to transparency, development, and listening to you. This is our digital hub for progress, and your voice is our most important guide.
+                </p>
+                <a href="#gunaso" class="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:-translate-y-1">
+                    Share Your Feedback
+                </a>
+            </div>
+            
+            <!-- Image Content (9:16 Aspect Ratio) -->
+            <div class="md:w-1/3 lg:w-1/2 flex justify-center md:justify-end">
+                <figure class="w-full max-w-xs md:max-w-sm">
+                    <!-- 
+                      IMPORTANT: Replace this placeholder with your 'mayor.png' image.
+                      Make sure 'mayor.png' is in the same folder as this HTML file.
+                    -->
+                    <img src="2.png" 
+                         alt="Mayor of Palpa" 
+                         class="w-full h-auto object-cover rounded-xl shadow-2xl"
+                         style="aspect-ratio: 9 / 16;"
+                         onerror="this.src='https://placehold.co/360x640/E0E7FF/1D4ED8?text=mayor.png+(9:16)'">
+                    <figcaption class="text-center text-gray-500 mt-2 text-sm">Hon. Mayor [Your Name]</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Key Initiatives Section -->
+        <section id="work" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Key Initiatives</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Dummy data showing significant work across all sectors of our municipality.</p>
+                </div>
+                
+                <!-- Grid of Achievements -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Infrastructure Card -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Infrastructure</h3>
+                        <p class="text-gray-600">Upgraded 50km of rural roads, connecting 5 remote villages to the main market. Initiated the "Bright Palpa" project, installing 1,200 solar street lights.</p>
+                    </div>
+                    <!-- Health Card -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Health & Sanitation</h3>
+                        <p class="text-gray-600">Established a new 15-bed health post in Ward 3. Launched a municipality-wide free health check-up camp, benefiting over 5,000 citizens.</p>
+                    </div>
+                    <!-- Education Card -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Education</h3>
+                        <p class="text-gray-600">Implemented the "Smart Classroom" program in 10 community schools. Started a scholarship fund for underprivileged and talented students.</p>
+                    </div>
+                    <!-- Tourism Card -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Tourism Promotion</h3>
+                        <p class="text-gray-600">Launched the "Palpa Heritage Trail," promoting local homestays. Hosted the first-ever Palpa Cultural Festival, attracting national tourism.</p>
+                    </div>
+                    <!-- Agriculture Card -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Agriculture</h3>
+                        <p class="text-gray-600">Distributed advanced irrigation tools to 500+ farmers. Started a new subsidy program for organic farming, increasing local organic produce by 40%.</p>
+                    </div>
+                    <!-- E-Governance Card -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">E-Governance</h3>
+                        <p class="text-gray-600">Digitized all municipal records and launched an online portal for vital registrations, reducing wait times from 3 days to 30 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gunaso / Feedback Form Section -->
+        <section id="gunaso" class="bg-blue-50 py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Submit Your 'Gunaso' or Feedback</h2>
+                        <p class="text-lg text-gray-700 mt-4">
+                            Your voice is essential for our progress. This form goes directly to my team and is reviewed weekly. We are listening.
+                        </p>
+                    </div>
+
+                    <!-- Form Container -->
+                    <div class="bg-white p-8 md:p-10 rounded-xl shadow-xl">
+                        <form id="feedback-form">
+                            <!-- Status Message Area -->
+                            <div id="form-status" class="mb-6 hidden"></div>
+                            
+                            <!-- Form Fields Grid -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <!-- Full Name -->
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                    <input type="text" name="Name" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                <!-- Phone or Email -->
+                                <div>
+                                    <label for="contact" class="block text-sm font-medium text-gray-700 mb-1">Phone or Email <span class="text-xs text-gray-500">(Optional)</span></label>
+                                    <input type="text" name="Contact" id="contact" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <!-- Feedback Type -->
+                                <div>
+                                    <label for="type" class="block text-sm font-medium text-gray-700 mb-1">Type of Feedback</label>
+                                    <select id="type" name="Type" class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                        <option value="Gunaso (Grievance)">Gunaso (Grievance)</option>
+                                        <option value="Suggestion">Suggestion</option>
+                                        <option value="Feedback">Feedback / Comment</option>
+                                        <option value="Appreciation">Appreciation</option>
+                                    </select>
+                                </div>
+                                <!-- Address / Ward No. -->
+                                <div>
+                                    <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Address / Ward No. <span class="text-xs text-gray-500">(Optional)</span></label>
+                                    <input type="text" name="Address" id="address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <input type="text" name="Subject" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-8">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                                <textarea id="message" name="Message" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" id="submit-button" class="w-full md:w-auto bg-blue-600 text-white text-lg font-semibold px-12 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-gray-400">
+                                    Send My Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-semibold">Office of the Mayor</p>
+            <p class="mb-4">Palpa Municipality, Nepal</p>
+            <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Close menu when a link is clicked
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // --- Set Current Year in Footer ---
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // --- Form Submission Logic ---
+        const form = document.getElementById('feedback-form');
+        const statusEl = document.getElementById('form-status');
+        const submitButton = document.getElementById('submit-button');
+        
+        //
+        // ============================ IMPORTANT ============================
+        //
+        //      YOU MUST REPLACE THE URL BELOW WITH YOUR GOOGLE APPS SCRIPT URL
+        //      Follow the 'setup_instructions.md' file to get this URL.
+        //
+        // ===================================================================
+        const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzChvUoBG6cTucdxlhtwIPK9m4W3jk901fppYOHfUzucPTroqZQGK_I0AW4Wegdy4j3/exec';
+
+        
+        // Function to display status messages
+        function showStatus(message, isError = false) {
+            statusEl.textContent = message;
+            statusEl.className = `p-4 rounded-lg mb-6 text-center ${isError ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}`;
+            statusEl.classList.remove('hidden');
+        }
+
+        // Check if the script URL has been set
+        function validateScriptURL() {
+            if (WEB_APP_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL_GOES_HERE') {
+                showStatus('FORM DISABLED: The website administrator has not configured the form endpoint. Please follow setup_instructions.md.', true);
+                submitButton.disabled = true;
+                submitButton.textContent = 'Form Disabled';
+                return false;
+            }
+            return true;
+        }
+
+        // Handle form submission
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            if (!validateScriptURL()) return;
+
+            // Show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            statusEl.classList.add('hidden');
+
+            const formData = new FormData(form);
+
+            try {
+                // We use 'no-cors' mode. This means we *send* the data
+                // but we cannot read the response from Google.
+                // We will assume success if the request itself doesn't fail.
+                await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Important for cross-domain request to Google Apps Script
+                    body: formData
+                });
+
+                // --- Success ---
+                showStatus('Thank you! Your feedback has been successfully submitted.', false);
+                form.reset();
+
+            } catch (error) {
+                // --- Error ---
+                console.error('Error submitting form:', error);
+                showStatus('An error occurred while submitting the form. Please try again later.', true);
+            } finally {
+                // --- Reset Button ---
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send My Message';
+            }
+        });
+
+        // Initial check when page loads
+        validateScriptURL();
+
+    </script>
+</body>
+</html>
